@@ -3,12 +3,12 @@
 
 namespace App\Http\Controllers;
 
-
+use Illuminate\Http\JsonResponse;
+use App\Http\Controllers\Controller;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Http\FormRequest;
-use Illuminate\Http\JsonResponse;
 
-class AbstractController
+class AbstractController extends Controller
 {
 
     /**
