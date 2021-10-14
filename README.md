@@ -1,4 +1,4 @@
-# Abstract-Controller-Laravel
+# Laravel-CRUD-Generator
 ## Description
 Abstract Controller will **Generate** A complete Rest API CRUD  
 ## Usage
