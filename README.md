@@ -9,7 +9,7 @@ Abstract Controller will **Generate** A complete Rest API CRUD
  
  ### Extend your Controllers from The Abstract Controller
  #### For new contollers you need to provide the AbstractController constructer (3) parameters:   
- #### (Model, [StoreRequest, UpdateRequest] as FormRequest)
+ #### (Model, [StoreRequest, UpdateRequest] as FormRequest, Storage Disk (optional), Folder(optional))
  ```php
 class ProductController extends AbstractController
 {
@@ -17,7 +17,8 @@ class ProductController extends AbstractController
     {
         parent::__construct(Product::class,
             StoreProductRequest::class,
-            UpdateProductRequest::class);
+            UpdateProductRequest::class,
+            'public', 'files');
     }
 }
 ```
